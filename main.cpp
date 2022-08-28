@@ -12,8 +12,21 @@
 
 using namespace std;
 
+int Sum(int n);
+
 int main() {
   cout << "Hello World!\n";
-  
+  cout << "Enter a number." << endl;
+  int num;
+  cin >> num;
+  cout << "Sum: " << Sum(num) << endl;
   return 0;
+}
+
+int Sum(int n) {
+  int total = 0;
+  for(int i = 1; i <= n; i++) {
+    total += i;
+  }
+  return total;
 }
